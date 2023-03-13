@@ -1,0 +1,17 @@
+.footer {
+  background-image: url(/images/header.jpg);
+  @extend %bacgroundPosition;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    
+    &--text {
+      line-height: 150%;
+      color: $white;
+      font-size: 18px;
+    }
+  }
+
+}

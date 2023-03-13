@@ -1,0 +1,56 @@
+.page {
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+
+  &__body {
+    margin: 0;
+    background-color: $pink;
+
+    &--h1 {
+      position: absolute;
+      top: -500px;
+    }
+
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
+
+  &__container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+
+    @include onTablet {
+      padding: 0 39px;
+    }
+
+    @include onDesktop {
+      padding: 0 55px;
+    }
+  }
+
+  &__section {
+    padding-bottom: 100px;
+
+    &--title {
+      display: flex;
+      font-size: 24px;
+      align-items: center;
+      justify-content: center;
+      color: $red;
+
+      margin-bottom: 30px;
+    }
+
+    &--subtitle {
+      font-size: 22px;
+      text-align: center;
+      color: $red;
+    }
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

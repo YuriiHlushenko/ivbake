@@ -1,0 +1,151 @@
+.menu {
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  background-color: $pink;
+  transform: translateX(-100%);
+  color: $red;
+
+  transition: transform $duration;
+
+  &:target {
+    transform: translateX(0);
+  }
+
+  &__cross {
+    @extend %menuPosition;
+    z-index: 4;
+    transition: opacity $duration;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @media (min-width: 1440px) {
+      left: calc((100vw - 1440px) / 2);
+    }
+
+    &--svg {
+      fill: $red;
+    }
+  }
+
+  &__container {
+    max-width: none;
+    background-color: $green;
+  }
+
+  &__list {
+    width: max-content;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1440px;
+    list-style: none;
+
+    @include onTablet {
+      padding: 40px 0;
+    }
+
+    @include onDesktop {
+      padding-bottom: 48px;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $red;
+    margin: 0 0 30px;
+
+    @include onDesktop {
+      margin: 0;
+    }
+
+    &--contacts {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-call {
+        fill: $red;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: $red;
+
+    transition: opacity $duration;
+
+    @include onDesktop {
+      font-size: 22px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &--img {
+      margin-right: 5px;
+      height: 40px;
+
+      @include onDesktop {
+        height: 60px;
+      }
+    }
+
+    &--call,
+    &--map,
+    &--viber {
+      &-tooltip {
+        position: absolute;
+        right: 100%;
+        display: block;
+
+        width: max-content;
+        padding-right: 12px;
+        color: $red;
+        font-weight: 700;
+        font-size: 18px;
+        pointer-events: none;
+        opacity: 0;
+
+        transition: opacity $duration;
+      }
+
+      &:hover &-tooltip {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  &__icon {
+    height: 30px;
+
+    &--call {
+      padding-top: 2px;
+      stroke: $red;
+    }
+
+    &--map {
+      margin-right: 5px;
+    }
+
+    @include onDesktop {
+      height: 35px;
+      margin: 0 0 10px;
+    }
+  }
+}

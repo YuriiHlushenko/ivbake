@@ -1,0 +1,61 @@
+%mon36px700 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: $black;
+}
+
+%ibm16px300 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: $grey;
+}
+
+%menuPosition {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22px;
+
+  @include onTablet {
+    right: 39px;
+  }
+
+  @include onDesktop {
+    right: 58px;
+  }
+
+  @media (min-width: 1440px) {
+    right: 0;
+  }
+}
+
+%callPosition {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 62px;
+
+  @include onTablet {
+    right: 96px;
+  }
+
+  @include onDesktop {
+    right: 58px;
+  }
+
+  @media (min-width: 1440px) {
+    right: 0;
+  }
+}
+
+%bacgroundPosition {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

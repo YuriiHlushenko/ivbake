@@ -1,0 +1,15 @@
+.bento {
+  &__box:hover {
+    .bento__box--photo1 {
+      background-image: url(/images/bento/bento2.jpg);
+    }
+
+    .bento__box--photo2 {
+      background-image: url(/images/bento/xl/bento2.jpg);
+    }
+
+    .bento__box--photo3 {
+      background-image: url(/images/cake/spartak/spartak2.jpg);
+    }
+  }
+}

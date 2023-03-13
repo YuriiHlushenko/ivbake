@@ -1,0 +1,51 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &--cake {
+    @include onDesktop {
+      width: calc(50% - 70px);
+      position: absolute;
+      right: 55px;
+      max-width: 705px;
+    }
+
+    @media (min-width: 1550px) {
+      right: calc((100vw - 1440px) / 2 );
+    }
+  }
+
+  &-line {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+  }
+
+  &__button {
+    padding: 20px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--svg {
+      height: 30px;
+      fill: $pink;
+
+      &-prev {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}

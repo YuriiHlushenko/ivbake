@@ -1,0 +1,93 @@
+.header {
+  position: relative;
+  background-color: $pink;
+
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 10px 0;
+    background-color: $pink;
+
+    @include onTablet {
+      padding: 20px 39px;
+    }
+
+    @include onDesktop {
+      justify-content: space-between;
+      padding: 20px 55px;
+    }
+
+    &--menu {
+      display: none;
+
+      @include onDesktop {
+        display: flex;
+        width: 75%;
+        margin: auto 0;
+        padding: 0;
+        justify-content: space-between;
+        // align-items: center;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    transition: opacity $duration;
+    height: 80px;
+
+    &:hover {
+      opacity: 0.6;
+
+    }
+
+    @include onTablet {
+      height: 120px;
+    }
+
+    @include onDesktop {
+      height: 210px;
+    }
+
+    &--img {
+      height: 100%;
+    }
+  }
+
+  &__menu,
+  &__call {
+    @extend %menuPosition;
+
+    &--svg {
+      fill: $red;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__call {
+    @extend %callPosition;
+  }
+}
+
+.fixed {
+  display: none;
+
+  @include onDesktop {
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    right: 12px;
+    top: 260px;
+    z-index: 4;
+  }
+
+  @media (min-width: 1550px) {
+    right: calc((100vw - 1440px) / 2 - 50px);
+  }
+}

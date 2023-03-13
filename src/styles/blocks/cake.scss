@@ -1,0 +1,59 @@
+.cake {
+  &__box {
+    border: 1px solid gray;
+    background-color: $pinkred;
+    margin-bottom: 40px;
+    height: max-content;
+
+    &--photo {
+      @extend %bacgroundPosition;
+      transition: all $duration;
+      &-img {
+        width: 100%;
+        transition: all $duration;
+      }
+    }
+
+    &--title {
+      margin: 10px 0;
+      text-align: center;
+      color: $red;
+    }
+
+    &--subtitle {
+      text-align: center;
+      color: $red;
+      line-height: 150%;
+    }
+  }
+
+  &__box:hover {
+    .cake__box--photo1 {
+      background-image: url(/images/cake/napoleon/napoleon4.jpg);
+    }
+
+    .cake__box--photo2 {
+      background-image: url(/images/cake/medovyk/medovyk2.jpg);
+    }
+
+    .cake__box--photo3 {
+      background-image: url(/images/cake/spartak/spartak2.jpg);
+    }
+
+    .cake__box--photo4 {
+      background-image: url(/images/cake/grillage/grillage2.jpg);
+    }
+
+    .cake__box--photo5 {
+      background-image: url(/images/cake/snikers/snikers2.jpg);
+    }
+
+    .cake__box--photo6 {
+      background-image: url(/images/cake/muss/muss2.jpg);
+    }
+
+    .cake__box--photo-img {
+      opacity: 0;
+    }
+  }
+}
