@@ -1,0 +1,52 @@
+.card {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  transition: all $duration;
+
+  &__photo {
+    @extend %bacgroundPosition;
+    transition: all $duration;
+    border-radius: 5px;
+
+    &--img {
+      display: block;
+      width: 100%;
+      transition: all $duration;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(211, 75, 98, 0.7);
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px rgba(211, 75, 98, 0.7);
+    transform: scale(1.02);
+
+    .card__photo--img {
+      opacity: 0;
+    }
+  }
+
+  &__description {
+    padding: 15px 20px;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    text-align: center;
+    color: $red;
+  }
+
+  &__about {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: $red;
+    margin: 0 0 20px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    // text-align: center;
+    color: $red;
+    line-height: 150%;
+  }
+}

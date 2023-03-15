@@ -50,13 +50,14 @@ window.onload = function() {
 
   slider('slider');
   slider('sliderBento');
+  // eslint-disable-next-line no-undef
   AOS.init();
-};
 
-window.addEventListener('hashchange', () => {
-  if (window.location.hash === '#menu') {
-    document.body.classList.add('page__body--with-menu');
-  } else {
-    document.body.classList.remove('page__body--with-menu');
-  }
-});
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#menu') {
+      document.body.classList.add('page__body--with-menu');
+    } else {
+      document.body.classList.remove('page__body--with-menu');
+    }
+  });
+};

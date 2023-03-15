@@ -1,14 +1,15 @@
 .page {
   scroll-behavior: smooth;
-  font-family: "Nunito", sans-serif;
+  font-family: "Bad Script", cursive;
+  min-width: 325px;
 
   &__body {
     margin: 0;
-    // background-color: $pink;
 
     &--h1 {
+      max-width: 200px;
       position: absolute;
-      top: -500px;
+      top: -1000px;
     }
 
     &--with-menu {
@@ -33,15 +34,20 @@
   &__section {
     padding-bottom: 100px;
     padding-top: 10px;
+    overflow-x: hidden;
 
     &--title {
       display: flex;
       font-size: 24px;
+      text-align: center;
       align-items: center;
       justify-content: center;
+      justify-self: center;
       color: $red;
+      text-shadow: 1px 3px 5px rgba(211, 75, 98, 0.7);
+      overflow: hidden;
 
-      margin: 30px 0;
+      margin: 30px auto;
 
       @include onTablet {
         margin: 50px 0;
@@ -54,13 +60,21 @@
     }
 
     &--subtitle {
-      font-size: 22px;
       text-align: center;
       color: $red;
+      text-shadow: 1px 3px 5px rgba(211, 75, 98, 0.5);
+    }
+
+    &--text {
+      font-family: "Montserrat Alternates", sans-serif;
+      line-height: 120%;
+      margin: 0 0 30px;
     }
   }
 }
 
 .bold {
+  display: block;
+  padding-top: 5px;
   font-weight: 700;
 }

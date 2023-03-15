@@ -1,12 +1,18 @@
 .slider,
 .sliderBento {
-  width: 100%;
-  overflow: hidden;
   position: relative;
 
   img {
     border-radius: 5px;
   }
+
+  &__container {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(211, 75, 98, 0.7),
+      inset 0 0 8px rgba(211, 75, 98, 0.7);
+  }
+
   &--cake {
     @include onDesktop {
       width: calc(50% - 70px);

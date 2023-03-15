@@ -1,32 +1,40 @@
 .zephyr {
   background-color: $pink;
 
-  &__box {
-    background-color: $pinkred;
+  &__card {
     @include onDesktop {
       height: max-content;
     }
   }
 
-  &__box:hover {
-    .zephyr__box--photo1 {
+  &__card:hover {
+    .zephyr__card--photo1 {
       background-image: url(/images/zephyr/bouquetS/bouquetS2.jpg);
     }
 
-    .zephyr__box--photo2 {
+    .zephyr__card--photo2 {
       background-image: url(/images/zephyr/bouquetM/bouquetM2.jpg);
     }
 
-    .zephyr__box--photo3 {
+    .zephyr__card--photo3 {
       background-image: url(/images/zephyr/bouquetL/bouquetL2.jpg);
     }
 
-    .zephyr__box--photo4 {
+    .zephyr__card--photo4 {
       background-image: url(/images/zephyr/box/box2.jpg);
     }
 
-    .zephyr__box--photo5 {
+    .zephyr__card--photo5 {
       background-image: url(/images/zephyr/domebox/dome2.jpg);
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $red;
+
+    @include onDesktop {
+      font-size: 22px;
     }
   }
 }

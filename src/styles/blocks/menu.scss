@@ -1,10 +1,12 @@
 .menu {
   position: fixed;
   height: 100vh;
+  // width: 100vw;
   z-index: 1;
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   overflow-y: auto;
   background-color: $pink;
   transform: translateX(-100%);
@@ -14,7 +16,85 @@
 
   &:target {
     transform: translateX(0);
+
+    // .header__logo--img {
+    //   -webkit-animation: swing 0.6s ease;
+    //   animation: swing 0.6s ease;
+    //   -webkit-animation-iteration-count: 1;
+    //   animation-iteration-count: 1;
+
+    //   // @keyframes logo {
+    //   //   0% {
+    //   //     scale: 5%;
+    //   //     rotate: -180deg;
+    //   //   }
+
+    //   //   75% {
+    //   //     scale: 120%;
+    //   //     rotate: 90deg;
+    //   //   }
+
+    //   //   100% {
+    //   //     scale: 100%;
+    //   //     rotate: 0deg;
+    //   //   }
+    //   // }
+    // }
   }
+
+  // @-webkit-keyframes swing {
+  //   15% {
+  //     -webkit-transform: translateX(9px);
+  //     transform: translateX(9px);
+  //   }
+  //   30% {
+  //     -webkit-transform: translateX(-9px);
+  //     transform: translateX(-9px);
+  //   }
+  //   40% {
+  //     -webkit-transform: translateX(6px);
+  //     transform: translateX(6px);
+  //   }
+  //   50% {
+  //     -webkit-transform: translateX(-6px);
+  //     transform: translateX(-6px);
+  //   }
+  //   65% {
+  //     -webkit-transform: translateX(3px);
+  //     transform: translateX(3px);
+  //   }
+  //   100% {
+  //     -webkit-transform: translateX(0);
+  //     transform: translateX(0);
+  //   }
+  // }
+
+  // @keyframes swing {
+  //   15% {
+  //     -webkit-transform: translateX(9px);
+  //     transform: translateX(9px);
+  //   }
+  //   30% {
+  //     -webkit-transform: translateX(-9px);
+  //     transform: translateX(-9px);
+  //   }
+  //   40% {
+  //     -webkit-transform: translateX(6px);
+  //     transform: translateX(6px);
+  //   }
+  //   50% {
+  //     -webkit-transform: translateX(-6px);
+  //     transform: translateX(-6px);
+  //   }
+  //   65% {
+  //     -webkit-transform: translateX(3px);
+  //     transform: translateX(3px);
+  //   }
+  //   100% {
+  //     -webkit-transform: translateX(0);
+  //     transform: translateX(0);
+  //   }
+  // }
 
   &__cross {
     @extend %menuPosition;
@@ -32,11 +112,6 @@
     &--svg {
       fill: $red;
     }
-  }
-
-  &__container {
-    max-width: none;
-    background-color: $green;
   }
 
   &__list {
@@ -86,6 +161,7 @@
     text-decoration: none;
     color: $red;
     line-height: 120%;
+    text-shadow: 1px 3px 5px rgba(211, 75, 98, 0.5);
 
     transition: all $duration;
 
@@ -102,7 +178,7 @@
     }
 
     &--img {
-      margin-right: 5px;
+      margin-right: 10px;
       height: 40px;
 
       @include onDesktop {
@@ -141,11 +217,7 @@
 
   &__icon {
     height: 30px;
-
-    &--call {
-      padding-top: 2px;
-      stroke: $red;
-    }
+    fill: $red;
 
     &--map {
       margin-right: 20px;
@@ -154,6 +226,10 @@
     @include onDesktop {
       height: 35px;
       margin: 0 0 10px;
+
+      &--call {
+        height: 30px;
+      }
     }
   }
 }

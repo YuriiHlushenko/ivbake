@@ -1,23 +1,22 @@
 .bento {
   background-color: $pinkred;
-  
-  &__box {
-    background-color: $pink;
+
+  &__card {
     @include onDesktop {
       height: max-content;
     }
   }
 
-  &__box:hover {
-    .bento__box--photo1 {
+  &__card:hover {
+    .bento__card--photo1 {
       background-image: url(/images/bento/bento2.jpg);
     }
 
-    .bento__box--photo2 {
+    .bento__card--photo2 {
       background-image: url(/images/bento/xl/bento2.jpg);
     }
 
-    .bento__box--photo3 {
+    .bento__card--photo3 {
       background-image: url(/images/cake/spartak/spartak2.jpg);
     }
   }
