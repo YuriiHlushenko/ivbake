@@ -1,4 +1,13 @@
 .bento {
+  background-color: $pinkred;
+  
+  &__box {
+    background-color: $pink;
+    @include onDesktop {
+      height: max-content;
+    }
+  }
+
   &__box:hover {
     .bento__box--photo1 {
       background-image: url(/images/bento/bento2.jpg);

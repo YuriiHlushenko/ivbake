@@ -1,0 +1,32 @@
+.zephyr {
+  background-color: $pink;
+
+  &__box {
+    background-color: $pinkred;
+    @include onDesktop {
+      height: max-content;
+    }
+  }
+
+  &__box:hover {
+    .zephyr__box--photo1 {
+      background-image: url(/images/zephyr/bouquetS/bouquetS2.jpg);
+    }
+
+    .zephyr__box--photo2 {
+      background-image: url(/images/zephyr/bouquetM/bouquetM2.jpg);
+    }
+
+    .zephyr__box--photo3 {
+      background-image: url(/images/zephyr/bouquetL/bouquetL2.jpg);
+    }
+
+    .zephyr__box--photo4 {
+      background-image: url(/images/zephyr/box/box2.jpg);
+    }
+
+    .zephyr__box--photo5 {
+      background-image: url(/images/zephyr/domebox/dome2.jpg);
+    }
+  }
+}

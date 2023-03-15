@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>iv_bake кондитерська для душі і шлунку</title>
     <link
       rel="icon" type="image/x-icon"
@@ -14,11 +16,11 @@
     <script type="text/javascript" src="scripts/main.js"></script>
   </head>
   <body class="page__body">
-    <heder class="header" id="home">
-      <h1 class="page__body--h1">кондитерська житомир торти на замовлення крафтовий зефір десерти букет з зефіру макарони</h1>
+    <header class="header" id="home">
+      <h1 class="page__body--h1">кондитерська житомир торти на замовлення крафтовий зефір десерти букет з зефіру макарони меренговий рулет</h1>
 
       <div class="header__top">
-        <a class="header__logo" href="#events">
+        <a class="header__logo" href="#cake">
           <img class="header__logo--img"
           src="images/logo.svg" alt="iv_bake logo">
         </a>
@@ -125,9 +127,7 @@
           </svg>
         </a>
 
-        <a class="header__menu"
-          href="#menu"
-        >
+        <a class="header__menu"href="#menu">
           <svg class="header__menu--svg"
             width="18"
             height="12"
@@ -140,18 +140,11 @@
           </svg>
         </a>
       </div>
-
-      <div class="header__main page__container">
-
-      </div>
-
-
-      </div>
-    </heder>
+    </header>
 
     <nav class="menu" id="menu">
       <div class="header__top">
-        <a class="header__logo" href="#events">
+        <a class="header__logo" href="#cake">
           <img class="header__logo--img"
             src="images/logo.svg" alt="iv_bake logo"
           >
@@ -201,7 +194,7 @@
             <a href="#zephyr" class="menu__link">
               <img class="menu__link--img"
               src="images/tulip.png" alt="бенто торт">
-              Зефірні тюльпани
+              Зефірні квіти
             </a>
           </li>
 
@@ -216,7 +209,7 @@
           <li class="menu__item">
             <div class="menu__item--contacts menu__item--contacts-call">
               <a href="tel:+380964523663">
-                <svg class="menu__icon menu__icon--call" fill="none"
+                <svg class="menu__icon menu__icon--call menu__link" fill="none"
                   stroke="currentColor" stroke-linecap="round"
                   stroke-linejoin="round" stroke-width="2"
                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +246,8 @@
               <img class="menu__icon menu__icon--map"
                 src="images/map.svg" alt="google maps"
               >
-              вул. Перемоги 53. м. Житомир<br>
+              вул. Перемоги 53<br>
+              м. Житомир<br>
               ТЦ "Прем'єр Холл"
             </a>
           </li>
@@ -262,236 +256,347 @@
       </div>
     </nav>
 
-    <section class="cake page__container page__section"
-      id="cake"
-    >
-      <h2 class="page__section--title">
-        <img class="menu__link--img"
-          src="images/cake.svg" alt="святковий торт"
-        >
-        Торти на замовлення
-      </h2>
-      <div class="grid">
-        <div class="cake__box
-          grid__item--mobile-1-1
-          grid__item--tablet-1-3
-          grid__item--desktop-1-2"
-        >
-          <div class="cake__box--photo1 cake__box--photo">
-            <img class="cake__box--photo-img cake__box--photo1-img"
-              src="images/cake/napoleon/napoleon.jpg" alt="торт наполеон"
-            >
+    <section class="cake page__section" id="cake">
+      <div class="page__container">
+        <h2 class="page__section--title" data-aos="fade-right">
+          <img class="menu__link--img"
+            src="images/cake.svg" alt="святковий торт"
+          >
+          Торти на замовлення
+        </h2>
+        <div class="grid">
+          <div class="cake__box
+            grid__item--mobile-1-1
+            grid__item--tablet-1-3
+            grid__item--desktop-1-2"
+          >
+            <div class="cake__box--photo1 cake__box--photo">
+              <img class="cake__box--photo-img cake__box--photo1-img"
+                src="images/cake/napoleon/napoleon.jpg" alt="торт наполеон"
+              >
+            </div>
+            <h3 class="cake__box--title">Наполеон</h3>
+            <p class="cake__box--subtitle">
+              Вага від 1.5кг<br>
+              <span class="bold">400₴/кг</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Наполеон</h3>
-          <p class="cake__box--subtitle">
-            Вага від 1.5кг<br>
-            <span class="bold">400₴/кг</span>
-          </p>
-        </div>
 
-        <div class="cake__box
-          grid__item--mobile-2-2
-          grid__item--tablet-4-6
-          grid__item--desktop-3-4"
-        >
-          <div class="cake__box--photo cake__box--photo2">
-            <img class="cake__box--photo-img cake__box--photo2-img"
-              src="images/cake/medovyk/medovyk.jpg" alt="торт медовик"
-            >
+          <div class="cake__box
+            grid__item--mobile-2-2
+            grid__item--tablet-4-6
+            grid__item--desktop-3-4"
+          >
+            <div class="cake__box--photo cake__box--photo2">
+              <img class="cake__box--photo-img cake__box--photo2-img"
+                src="images/cake/medovyk/medovyk.jpg" alt="торт медовик"
+              >
+            </div>
+            <h3 class="cake__box--title">Медовик</h3>
+            <p class="cake__box--subtitle">
+              Вага від 1кг<br>
+              <span class="bold">400₴/кг</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Медовик</h3>
-          <p class="cake__box--subtitle">
-            Вага від 1кг<br>
-            <span class="bold">400₴/кг</span>
-          </p>
-        </div>
 
-        <div class="cake__box
-          grid__item--mobile-1-1
-          grid__item--tablet-1-3
-          grid__item--desktop-5-6"
-        >
-          <div class="cake__box--photo cake__box--photo3">
-            <img class="cake__box--photo-img cake__box--photo3-img"
-              src="images/cake/spartak/spartak.jpg" alt="торт спартак"
-            >
+          <div class="cake__box
+            grid__item--mobile-1-1
+            grid__item--tablet-1-3
+            grid__item--desktop-5-6"
+          >
+            <div class="cake__box--photo cake__box--photo3">
+              <img class="cake__box--photo-img cake__box--photo3-img"
+                src="images/cake/spartak/spartak.jpg" alt="торт спартак"
+              >
+            </div>
+            <h3 class="cake__box--title">Спартак</h3>
+            <p class="cake__box--subtitle">
+              Вага від 1кг<br>
+              <span class="bold">450₴/кг</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Спартак</h3>
-          <p class="cake__box--subtitle">
-            Вага від 1кг<br>
-            <span class="bold">450₴/кг</span>
-          </p>
-        </div>
 
-        <div class="cake__box
-          grid__item--mobile-2-2
-          grid__item--tablet-4-6
-          grid__item--desktop-1-2"
-        >
-          <div class="cake__box--photo cake__box--photo4">
-            <img class="cake__box--photo-img cake__box--photo4-img"
-              src="images/cake/grillage/grillage.jpg" alt="торт грильяжний в розрізі"
-            >
+          <div class="cake__box
+            grid__item--mobile-2-2
+            grid__item--tablet-4-6
+            grid__item--desktop-1-2"
+          >
+            <div class="cake__box--photo cake__box--photo4">
+              <img class="cake__box--photo-img cake__box--photo4-img"
+                src="images/cake/grillage/grillage.jpg" alt="торт грильяжний в розрізі"
+              >
+            </div>
+            <h3 class="cake__box--title">Грильяжний</h3>
+            <p class="cake__box--subtitle">
+              Вага від 1.7кг<br>
+              <span class="bold">500₴/кг</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Грильяжний</h3>
-          <p class="cake__box--subtitle">
-            Вага від 1.7кг<br>
-            <span class="bold">500₴/кг</span>
-          </p>
-        </div>
 
-        <div class="cake__box
-          grid__item--mobile-1-1
-          grid__item--tablet-1-3
-          grid__item--desktop-3-4"
-        >
-          <div class="cake__box--photo cake__box--photo5">
-            <img class="cake__box--photo-img cake__box--photo5-img"
-              src="images/cake/snikers/snikers.jpg" alt="торт снікерс з горіхами і карамеллю"
-            >
+          <div class="cake__box
+            grid__item--mobile-1-1
+            grid__item--tablet-1-3
+            grid__item--desktop-3-4"
+          >
+            <div class="cake__box--photo cake__box--photo5">
+              <img class="cake__box--photo-img cake__box--photo5-img"
+                src="images/cake/snikers/snikers.jpg" alt="торт снікерс з горіхами і карамеллю"
+              >
+            </div>
+            <h3 class="cake__box--title">Снікерс</h3>
+            <p class="cake__box--subtitle">
+              Вага від 1.5кг<br>
+              <span class="bold">500₴/кг</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Снікерс</h3>
-          <p class="cake__box--subtitle">
-            Вага від 1.5кг<br>
-            <span class="bold">500₴/кг</span>
-          </p>
-        </div>
 
-        <div class="cake__box
-          grid__item--mobile-2-2
-          grid__item--tablet-4-6
-          grid__item--desktop-5-6"
-        >
-          <div class="cake__box--photo cake__box--photo6">
-            <img class="cake__box--photo-img cake__box--photo6-img"
-              src="images/cake/muss/muss.jpg" alt="торт кубик з мусових квадратів мусовий"
-            >
+          <div class="cake__box
+            grid__item--mobile-2-2
+            grid__item--tablet-4-6
+            grid__item--desktop-5-6"
+          >
+            <div class="cake__box--photo cake__box--photo6">
+              <img class="cake__box--photo-img cake__box--photo6-img"
+                src="images/cake/muss/muss.jpg" alt="торт кубик з мусових квадратів мусовий"
+              >
+            </div>
+            <h3 class="cake__box--title">Торт кубик мусовий</h3>
+            <p class="cake__box--subtitle">
+              Вага 2.5кг <br>
+              <span class="bold">1250₴</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Торт кубик мусовий</h3>
-          <p class="cake__box--subtitle">
-            Вага 2.5кг <br>
-            <span class="bold">1250₴</span>
-          </p>
-        </div>
 
-        <div class="slider slider--cake
-          grid__item--mobile-1-2
-          grid__item--tablet-1-6
-          grid__item--desktop-7-12"
-        >
-          <div class="slider-line">
-            <img src="images/cake/dekors/dekor.jpg" alt="торт прикрашений квітами">
-            <img src="images/cake/dekors/dekor2.jpg" alt="торт з медведем мішкою хмарками для дитини">
-            <img src="images/cake/dekors/dekor3.jpg" alt="торт лего lego">
-            <img src="images/cake/dekors/dekor4.jpg" alt="торт з медведем мішкою для дитини 1 рік">
-            <img src="images/cake/dekors/dekor5.jpg" alt="торт шоколадний">
-            <img src="images/cake/dekors/dekor6.jpg" alt="торт привіт 31">
-            <img src="images/cake/dekors/dekor7.jpg" alt="торт з оригінальним декором візерунками">
-            <img src="images/cake/dekors/dekor8.jpg" alt="торт мікі маус">
-            <img src="images/cake/dekors/dekor9.jpg" alt="торт з днем народження рожевий з червоним">
-            <img src="images/cake/dekors/dekor10.jpg" alt="торт рожевий">
-            <img src="images/cake/dekors/dekor11.jpg" alt="торт прикрашений евкаліптовим листям ">
-            <img src="images/cake/dekors/dekor12.jpg" alt="торт куля з молотком">
-            <img src="images/cake/dekors/dekor13.jpg" alt="торт ельза">
-            <img src="images/cake/dekors/dekor14.jpg" alt="торт синочку на пів рочку пів торта">
-            <img src="images/cake/dekors/dekor15.jpg" alt="торт прикрашений рисовою бумагою парусами">
+          <div class="slider slider--cake
+            grid__item--mobile-1-2
+            grid__item--tablet-1-6
+            grid__item--desktop-7-12"
+          >
+            <div class="slider-line">
+              <img src="images/cake/dekors/dekor.jpg" alt="торт прикрашений квітами">
+              <img src="images/cake/dekors/dekor2.jpg" alt="торт з медведем мішкою хмарками для дитини">
+              <img src="images/cake/dekors/dekor3.jpg" alt="торт лего lego">
+              <img src="images/cake/dekors/dekor4.jpg" alt="торт з медведем мішкою для дитини 1 рік">
+              <img src="images/cake/dekors/dekor5.jpg" alt="торт шоколадний">
+              <img src="images/cake/dekors/dekor6.jpg" alt="торт привіт 31">
+              <img src="images/cake/dekors/dekor7.jpg" alt="торт з оригінальним декором візерунками">
+              <img src="images/cake/dekors/dekor8.jpg" alt="торт мікі маус">
+              <img src="images/cake/dekors/dekor9.jpg" alt="торт з днем народження рожевий з червоним">
+              <img src="images/cake/dekors/dekor10.jpg" alt="торт рожевий">
+              <img src="images/cake/dekors/dekor11.jpg" alt="торт прикрашений евкаліптовим листям ">
+              <img src="images/cake/dekors/dekor12.jpg" alt="торт куля з молотком">
+              <img src="images/cake/dekors/dekor13.jpg" alt="торт ельза">
+              <img src="images/cake/dekors/dekor14.jpg" alt="торт синочку на пів рочку пів торта">
+              <img src="images/cake/dekors/dekor15.jpg" alt="торт прикрашений рисовою бумагою парусами">
+            </div>
+            <h3 class="page__section--subtitle cake__slider--subtitle">Приклади декорів</h3>
+
+            <button class="slider__button slider__button--prev">
+              <svg class="slider__button--svg slider__button--svg-prev"
+                viewBox="0 0 8 12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
+              </svg>
+            </button>
+            <button class="slider__button slider__button--next">
+              <svg class="slider__button--svg"
+                viewBox="0 0 8 12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
+              </svg>
+            </button>
           </div>
-          <h3 class="page__section--subtitle">Приклади декорів</h3>
-
-          <button class="slider__button slider__button--prev">
-            <svg class="slider__button--svg slider__button--svg-prev"
-              viewBox="0 0 8 12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
-            </svg>
-          </button>
-          <button class="slider__button slider__button--next">
-            <svg class="slider__button--svg"
-              viewBox="0 0 8 12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
-            </svg>
-          </button>
         </div>
       </div>
     </section>
 
-    <section class="bento page__section page__container" id="bento">
-      <h2 class="page__section--title">
-        <img class="menu__link--img"
-        src="images/bento.svg" alt="бенто торт"
-        >
-        Бенто
-      </h2>
+    <section class="bento page__section" id="bento">
+      <div class="page__container">
 
-      <div class="grid">
-        <div class="cake__box bento__box
-          grid__item--mobile-1-1
-          grid__item--tablet-1-3
-          grid__item--desktop-1-3"
-        >
-          <div class="bento__box--photo1 cake__box--photo">
-            <img class="bento__box--photo1-img cake__box--photo-img"
-              src="images/bento/bento.jpg" alt="торт бенто міні бі хепі "
-            >
+        <h2 class="page__section--title" data-aos="fade-left">
+          <img class="menu__link--img"
+          src="images/bento.svg" alt="бенто торт"
+          >
+          Бенто
+        </h2>
+
+        <div class="grid">
+          <div class="cake__box bento__box
+            grid__item--mobile-1-1
+            grid__item--tablet-1-3
+            grid__item--desktop-1-3"
+          >
+            <div class="bento__box--photo1 cake__box--photo">
+              <img class="bento__box--photo1-img cake__box--photo-img"
+                src="images/bento/bento.jpg" alt="торт бенто міні бі хепі "
+              >
+            </div>
+            <h3 class="cake__box--title">Бенто 200г</h3>
+            <p class="cake__box--subtitle">
+              Смак: снікерс, шварцвальд<br>
+              <span class="bold">230₴/кг</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Бенто 200г</h3>
-          <p class="cake__box--subtitle">
-            Смак: снікерс шварцвальд<br>
-            <span class="bold">400₴/кг</span>
-          </p>
+
+          <div class="cake__box bento__box
+            grid__item--mobile-2-2
+            grid__item--tablet-4-6
+            grid__item--desktop-4-6"
+          >
+            <div class="bento__box--photo2 cake__box--photo">
+              <img class="bento__box--photo2-img cake__box--photo-img"
+                src="images/bento/xl/bento.jpg" alt="торт Бенто XL з днем народження"
+              >
+            </div>
+            <h3 class="cake__box--title">Бенто XL 700г</h3>
+            <p class="cake__box--subtitle">
+              Смак: бейліз снікерс шварцвальд<br>
+              <span class="bold">400₴/кг</span>
+            </p>
+          </div>
+
+          <div class="sliderBento
+            grid__item--mobile-1-2
+            grid__item--tablet-1-6
+            grid__item--desktop-7-12"
+          >
+            <div class="sliderBento-line">
+              <img src="images/bento/decors/decor.jpg" alt="торти бенто різнокольорові">
+              <img src="images/bento/decors/decor2.jpg" alt="торт бенто в коробці з свічкою і ложкою">
+              <img src="images/bento/decors/decor3.jpg" alt="торт бенто в коробці прапор україни">
+              <img src="images/bento/decors/decor4.jpg" alt="торт бенто любимому дідусику улюбленому дідусю">
+              <img src="images/bento/decors/decor5.jpg" alt="торт бенто з різнокольоровим написом">
+            </div>
+            <h3 class="page__section--subtitle">Приклади декорів</h3>
+
+            <button class="slider__button sliderBento__button--prev slider__button--prev" >
+              <svg class="slider__button--svg slider__button--svg-prev"
+                viewBox="0 0 8 12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
+              </svg>
+            </button>
+            <button class="slider__button sliderBento__button--next slider__button--next">
+              <svg class="slider__button--svg"
+                viewBox="0 0 8 12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="cake__box bento__box
-          grid__item--mobile-2-2
-          grid__item--tablet-4-6
-          grid__item--desktop-4-6"
-        >
-          <div class="bento__box--photo2 cake__box--photo">
-            <img class="bento__box--photo2-img cake__box--photo-img"
-              src="images/bento/xl/bento.jpg" alt="торт Бенто XL з днем народження"
-            >
+    <section class="zephyr page__section" id="zephyr">
+      <div class="page__container">
+
+        <h2 class="page__section--title" data-aos="fade-right">
+          <img class="menu__link--img"
+                src="images/tulip.png" alt="бенто торт">
+                Зефірні квіти
+        </h2>
+
+        <div class="grid">
+          <div class="cake__box zephyr__box
+            grid__item--mobile-1-1
+            grid__item--tablet-1-3
+            grid__item--desktop-1-4"
+          >
+            <div class="zephyr__box--photo1 cake__box--photo">
+              <img class="cake__box--photo-img"
+                src="images/zephyr/bouquetS/bouquetS.jpg" alt="букет з зефіру зефірні люльпани розмір с"
+              >
+            </div>
+
+            <h3 class="cake__box--title">Букет S</h3>
+
+            <p class="cake__box--subtitle">
+              Діаметр 16см<br>
+              <span class="bold">330₴</span>
+            </p>
           </div>
-          <h3 class="cake__box--title">Бенто XL 700г</h3>
-          <p class="cake__box--subtitle">
-            Смак: бейліз снікерс шварцвальд<br>
-            <span class="bold">400₴/кг</span>
-          </p>
-        </div>
 
-        <div class="sliderBento slider
-          grid__item--mobile-1-2
-          grid__item--tablet-1-6
-          grid__item--desktop-7-12"
-        >
-          <div class="sliderBento-line slider-line">
-            <img src="images/bento/decors/decor.jpg" alt="торти бенто різнокольорові">
-            <img src="images/bento/decors/decor2.jpg" alt="торт бенто в коробці з свічкою і ложкою">
-            <img src="images/bento/decors/decor3.jpg" alt="торт бенто в коробці прапор україни">
-            <img src="images/bento/decors/decor4.jpg" alt="торт бенто любимому дідусику улюбленому дідусю">
-            <img src="images/bento/decors/decor5.jpg" alt="торт бенто з різнокольоровим написом">
+          <div class="cake__box zephyr__box
+            grid__item--mobile-2-2
+            grid__item--tablet-4-6
+            grid__item--desktop-5-8"
+          >
+            <div class="zephyr__box--photo2 cake__box--photo">
+              <img class="cake__box--photo-img"
+                src="images/zephyr/bouquetM/bouquetM.jpg" alt="букет з зефіру зефірні люльпани розмір м"
+              >
+            </div>
 
+            <h3 class="cake__box--title">Букет M</h3>
+
+            <p class="cake__box--subtitle">
+              Діаметр 20см<br>
+              <span class="bold">420₴</span>
+            </p>
           </div>
-          <h3 class="page__section--subtitle">Приклади декорів</h3>
 
-          <button class="slider__button sliderBento__button--prev slider__button--prev" >
-            <svg class="slider__button--svg slider__button--svg-prev"
-              viewBox="0 0 8 12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
-            </svg>
-          </button>
-          <button class="slider__button sliderBento__button--next slider__button--next">
-            <svg class="slider__button--svg"
-              viewBox="0 0 8 12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z">
-            </svg>
-          </button>
+          <div class="cake__box zephyr__box
+            grid__item--mobile-1-1
+            grid__item--tablet-1-3
+            grid__item--desktop-9-12"
+          >
+            <div class="zephyr__box--photo3 cake__box--photo">
+              <img class="cake__box--photo-img"
+                src="images/zephyr/bouquetL/bouquetL.jpg" alt="букет з зефіру зефірні люльпани розмір л"
+              >
+            </div>
+
+            <h3 class="cake__box--title">Букет L</h3>
+
+            <p class="cake__box--subtitle">
+              Діаметр 25см<br>
+              <span class="bold">600₴</span>
+            </p>
+          </div>
+
+          <div class="cake__box zephyr__box
+            grid__item--mobile-2-2
+            grid__item--tablet-4-6
+            grid__item--desktop-1-4"
+          >
+            <div class="zephyr__box--photo4 cake__box--photo">
+              <img class="cake__box--photo-img"
+                src="images/zephyr/box/box.jpg" alt="подарункова коробка зефіру прозора"
+              >
+            </div>
+
+            <h3 class="cake__box--title">Коробка</h3>
+
+            <p class="cake__box--subtitle">
+              Діаметр 21см<br>
+              <span class="bold">420₴</span>
+            </p>
+          </div>
+
+          <div class="cake__box zephyr__box
+            grid__item--mobile-1-1
+            grid__item--tablet-1-3
+            grid__item--desktop-5-8"
+          >
+            <div class="zephyr__box--photo5 cake__box--photo">
+              <img class="cake__box--photo-img"
+                src="images/zephyr/domebox/dome.jpg" alt="купольна маленька коробка зефіру прозора"
+              >
+            </div>
+
+            <h3 class="cake__box--title">Купольна коробочка</h3>
+
+            <p class="cake__box--subtitle">
+              Діаметр 9см<br>
+              Замовлення від 5шт<br>
+              <span class="bold">65₴</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -507,5 +612,6 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

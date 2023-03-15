@@ -1,8 +1,12 @@
-.slider {
+.slider,
+.sliderBento {
   width: 100%;
   overflow: hidden;
   position: relative;
 
+  img {
+    border-radius: 5px;
+  }
   &--cake {
     @include onDesktop {
       width: calc(50% - 70px);

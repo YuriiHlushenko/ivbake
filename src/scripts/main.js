@@ -2,8 +2,10 @@
 
 window.onload = function() {
   function slider(sliderName) {
-    const images = document.querySelectorAll(`.${sliderName} .${sliderName}-line img`);
-    const sliderLine = document.querySelector(`.${sliderName} .${sliderName}-line`);
+    const images = document.querySelectorAll(
+      `.${sliderName} .${sliderName}-line img`);
+    const sliderLine = document.querySelector(
+      `.${sliderName} .${sliderName}-line`);
     let count = 0;
     let width;
 
@@ -21,8 +23,8 @@ window.onload = function() {
     init();
     window.addEventListener('resize', init);
 
-    document.querySelector(`.${sliderName}__button--next`).addEventListener('click',
-      function() {
+    document.querySelector(`.${sliderName}__button--next`).addEventListener(
+      'click', function() {
         count++;
 
         if (count >= images.length) {
@@ -31,8 +33,8 @@ window.onload = function() {
         rollSlider();
       });
 
-    document.querySelector(`.${sliderName}__button--prev`).addEventListener('click',
-      function() {
+    document.querySelector(`.${sliderName}__button--prev`).addEventListener(
+      'click', function() {
         count--;
 
         if (count < 0) {
@@ -48,6 +50,7 @@ window.onload = function() {
 
   slider('slider');
   slider('sliderBento');
+  AOS.init();
 };
 
 window.addEventListener('hashchange', () => {

@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: $pink;
+  background-color: $pinkred;
 
   &__top {
     position: relative;
@@ -9,7 +9,6 @@
     margin: 0 auto;
     max-width: 1440px;
     padding: 10px 0;
-    background-color: $pink;
 
     @include onTablet {
       padding: 20px 39px;
@@ -25,7 +24,7 @@
 
       @include onDesktop {
         display: flex;
-        width: 75%;
+        width: 78%;
         margin: auto 0;
         padding: 0;
         justify-content: space-between;
@@ -38,11 +37,11 @@
     display: block;
     transition: opacity $duration;
     height: 80px;
+    // animation: logo 2s linear 2 alternate;
 
-    &:hover {
-      opacity: 0.6;
-
-    }
+    // &:hover {
+    //   // opacity: 0.6;
+    // }
 
     @include onTablet {
       height: 120px;
@@ -53,7 +52,25 @@
     }
 
     &--img {
+      animation: logo 0.5s linear 1 alternate;
       height: 100%;
+    }
+
+    @keyframes logo {
+      0% {
+        scale: 5%;
+        rotate: -180deg;
+      }
+
+      75% {
+        scale: 120%;
+        rotate: 90deg;
+      }
+
+      100% {
+        scale: 100%;
+        rotate: 0deg;
+      }
     }
   }
 

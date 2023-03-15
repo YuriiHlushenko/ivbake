@@ -4,7 +4,7 @@
 
   &__body {
     margin: 0;
-    background-color: $pink;
+    // background-color: $pink;
 
     &--h1 {
       position: absolute;
@@ -32,6 +32,7 @@
 
   &__section {
     padding-bottom: 100px;
+    padding-top: 10px;
 
     &--title {
       display: flex;
@@ -40,7 +41,16 @@
       justify-content: center;
       color: $red;
 
-      margin-bottom: 30px;
+      margin: 30px 0;
+
+      @include onTablet {
+        margin: 50px 0;
+      }
+
+      @include onDesktop {
+        font-size: 28px;
+        margin: 70px 0;
+      }
     }
 
     &--subtitle {
