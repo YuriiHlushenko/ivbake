@@ -1,10 +1,11 @@
 .page {
   scroll-behavior: smooth;
   font-family: "Bad Script", cursive;
-  min-width: 325px;
+  min-width: 280px;
 
   &__body {
     margin: 0;
+    background-color: $pink;
 
     &--h1 {
       max-width: 200px;
@@ -44,7 +45,7 @@
       justify-content: center;
       justify-self: center;
       color: $red;
-      text-shadow: 1px 3px 5px rgba(211, 75, 98, 0.7);
+      text-shadow: 1px 3px 3px rgba(211, 75, 98, 0.5);
       overflow: hidden;
 
       margin: 30px auto;
@@ -62,13 +63,14 @@
     &--subtitle {
       text-align: center;
       color: $red;
-      text-shadow: 1px 3px 5px rgba(211, 75, 98, 0.5);
+      text-shadow: 1px 3px 3px rgba(211, 75, 98, 0.5);
     }
 
     &--text {
       font-family: "Montserrat Alternates", sans-serif;
       line-height: 120%;
       margin: 0 0 30px;
+      text-shadow: 1px 1px 1px rgba(216, 54, 94, 0.5);
     }
   }
 }

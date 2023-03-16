@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  height: 100vh;
+  // height: 100vh;
   z-index: 1;
   top: 0;
   left: 0;
@@ -39,21 +39,21 @@
     }
   }
 
-  &__item:nth-child(-n+4) {
+  &__item--menu:nth-child(-n+4) {
     transform: translate(-150%);
     opacity: 0;
     transition: all 0.4s;
   }
 
-  &__item:nth-child(2) {
+  &__item--menu:nth-child(2) {
     transition: all 0.6s;
   }
 
-  &__item:nth-child(3) {
+  &__item--menu:nth-child(3) {
     transition: all 0.6s;
   }
 
-  &__item:nth-child(4) {
+  &__item--menu:nth-child(4) {
     transition: all 0.7s;
   }
 
@@ -131,7 +131,8 @@
     text-decoration: none;
     color: $red;
     line-height: 120%;
-    text-shadow: 1px 3px 5px rgba(211, 75, 98, 0.5);
+    text-shadow: 1px 3px 5px rgba(211, 75, 98, 0.5),
+      1px 1px 1px rgba(206, 111, 130, 0.2);
 
     transition: all $duration;
 
@@ -149,7 +150,7 @@
 
     &--img {
       margin-right: 10px;
-      height: 40px;
+      height: 50px;
 
       @include onDesktop {
         height: 60px;
@@ -161,7 +162,7 @@
     &--viber {
       &-tooltip {
         padding: 5px;
-        border-radius: 3px;
+        border-radius: 10px;
         background-color: $pink;
         position: absolute;
         right: 100%;
@@ -186,19 +187,23 @@
   }
 
   &__icon {
-    height: 30px;
+    height: 40px;
     fill: $red;
 
     &--map {
       margin-right: 20px;
     }
 
-    @include onDesktop {
+    &--call {
+      display: block;
       height: 35px;
-      margin: 0 0 10px;
+    }
+
+    @include onDesktop {
+      margin: 0 0 15px;
 
       &--call {
-        height: 30px;
+        height: 40px;
       }
     }
   }

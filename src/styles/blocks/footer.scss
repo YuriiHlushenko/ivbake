@@ -1,16 +1,104 @@
 .footer {
+  border-radius: 5px 5px 0 0;
   background-image: url(/images/header.jpg);
   @extend %bacgroundPosition;
+  overflow-x: hidden;
+  padding: 50px 0 30px;
 
-  &__container {
+  @include onTablet {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__menu {
+    @include onTablet {
+      // margin: 0;
+      display: grid;
+      align-items: flex-start;
+    }
+  }
+
+  &__part {
+    margin: auto auto 40px;
+    padding: 0;
+
+    @include onTablet {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__shedule {
+    margin-bottom: 50px;
+    line-height: 150%;
+    color: $pink;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(245, 236, 237, 1);
+
+    @include onTablet {
+      font-size: 24px;
+    }
+  }
+  &__list {
+    @include onTablet {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__adress {
+    justify-content: center;
+  }
+
+  &__contacts {
+    @include onTablet {
+      display: flex;
+      margin-bottom: 0;
+      order: 1;
+      height: 100%;
+      width: 80%;
+      align-items: start;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__icon {
+    fill: $pink;
+    margin-right: 15px;
+  }
+
+  &__gotop {
     display: flex;
-    align-items: center;
-    height: 200px;
-    
-    &--text {
-      line-height: 150%;
-      color: $white;
-      font-size: 18px;
+    justify-content: end;
+
+    @include onTablet {
+      order: 2;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $pink;
+    text-shadow: 1px 1px 1px rgba(245, 236, 237, 1);
+
+    &--gotop {
+      padding: 10px;
+
+      &-svg {
+        fill: $pink;
+        transform: rotate(180deg);
+        border-radius: 50%;
+        z-index: 2;
+      }
     }
   }
 

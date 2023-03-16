@@ -1,12 +1,11 @@
 .slider,
 .sliderBento {
-  position: relative;
-
   img {
     border-radius: 5px;
   }
 
   &__container {
+    position: relative;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 8px rgba(211, 75, 98, 0.7),
