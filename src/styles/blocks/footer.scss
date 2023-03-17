@@ -3,7 +3,7 @@
   background-image: url(/images/header.jpg);
   @extend %bacgroundPosition;
   overflow-x: hidden;
-  padding: 50px 0 30px;
+  padding: 50px 0 20px;
 
   @include onTablet {
     border-radius: 10px 10px 0 0;
@@ -92,6 +92,7 @@
 
     &--gotop {
       padding: 10px;
+      height: min-content;
 
       &-svg {
         fill: $pink;
