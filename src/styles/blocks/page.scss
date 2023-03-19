@@ -1,7 +1,7 @@
 .page {
-  scroll-behavior: smooth;
-  font-family: "Bad Script", cursive;
   min-width: 280px;
+  font-family: "Bad Script", cursive;
+  scroll-behavior: smooth;
 
   &__body {
     margin: 0;
@@ -10,7 +10,8 @@
     &--h1 {
       max-width: 200px;
       position: absolute;
-      top: -1000px;
+      z-index: -1;
+      opacity: 0;
     }
 
     &--with-menu {

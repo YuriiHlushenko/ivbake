@@ -1,5 +1,5 @@
 .desserts {
-  background-color: $pink;
+  background-color: $pinkred;
 
   &__grid {
     display: flex;
@@ -16,7 +16,19 @@
     @include onDesktop {
       width: 23%;
     }
+
+    &--bigger {
+      width: 100%;
+
+      @include onTablet {
+        width: 48%;
+      }
+      @include onDesktop {
+        width: 23%;
+      }
+    }
   }
+
   &__card:hover {
     .desserts__card--photo1 {
       background-image: url(/images/desserts/merengue/merengue2.jpg);

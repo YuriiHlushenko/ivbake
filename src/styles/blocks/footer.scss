@@ -3,17 +3,30 @@
   background-image: url(/images/header.jpg);
   @extend %bacgroundPosition;
   overflow-x: hidden;
-  padding: 50px 0 20px;
+  padding: 50px 0;
 
   @include onTablet {
     border-radius: 10px 10px 0 0;
   }
 
+  &__info {
+    &--container {
+      width: max-content;
+      margin: 0 auto;
+
+      @include onTablet {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
   &__menu {
     @include onTablet {
-      // margin: 0;
+      margin: 0;
       display: grid;
-      align-items: flex-start;
     }
   }
 
@@ -26,17 +39,6 @@
     }
   }
 
-  &__shedule {
-    margin-bottom: 50px;
-    line-height: 150%;
-    color: $pink;
-    font-size: 20px;
-    text-shadow: 1px 1px 1px rgba(245, 236, 237, 1);
-
-    @include onTablet {
-      font-size: 24px;
-    }
-  }
   &__list {
     @include onTablet {
       order: 2;
@@ -52,11 +54,16 @@
     }
   }
 
-  &__adress {
-    justify-content: center;
+  &__item {
+    &--last {
+      margin-bottom: 0;
+      width: max-content;
+    }
   }
 
   &__contacts {
+    margin-bottom: 0;
+
     @include onTablet {
       display: flex;
       margin-bottom: 0;
@@ -64,6 +71,10 @@
       height: 100%;
       width: 80%;
       align-items: start;
+
+      .menu__link {
+        margin-right: 20px;
+      }
     }
 
     @include onDesktop {
@@ -73,7 +84,6 @@
 
   &__icon {
     fill: $pink;
-    margin-right: 15px;
   }
 
   &__gotop {
@@ -91,11 +101,34 @@
     text-shadow: 1px 1px 1px rgba(245, 236, 237, 1);
 
     &--gotop {
-      padding: 10px;
-      height: min-content;
+      position: fixed;
+      bottom: 50px;
+
+      @include onTablet {
+        right: 39px;
+      }
+
+      @include onDesktop {
+        right: 8px;
+      }
+
+      @media (min-width: 1550px) {
+        right: calc((100vw - 1440px) / 2 - (100vw - 1550px) / 4 - 50px);
+      }
+
+      opacity: 0.7;
+
+      &-static {
+        position: static;
+
+        @include onTablet {
+          display: none;
+        }
+      }
 
       &-svg {
-        fill: $pink;
+        margin: 0;
+        fill: $red;
         transform: rotate(180deg);
         border-radius: 50%;
         z-index: 2;

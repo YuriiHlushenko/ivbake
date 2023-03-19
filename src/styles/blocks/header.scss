@@ -45,11 +45,6 @@
     box-shadow: 0 0 8px rgba(211, 75, 98, 0.7),
       inset 0 0 8px rgba(211, 75, 98, 0.7);
     border-radius: 50%;
-    // animation: logo 2s linear 2 alternate;
-
-    // &:hover {
-    //   // opacity: 0.6;
-    // }
 
     @include onTablet {
       height: 120px;
@@ -108,7 +103,7 @@
     flex-direction: column;
     display: flex;
     position: fixed;
-    right: 12px;
+    right: 8px;
     top: 260px;
     z-index: 4;
   }
