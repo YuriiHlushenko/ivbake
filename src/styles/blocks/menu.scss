@@ -12,11 +12,6 @@
 
   transition: transform $duration;
 
-  &__container {
-    height: 100vh;
-    overflow-y: scroll;
-  }
-
   @include onDesktop {
     display: none;
   }
