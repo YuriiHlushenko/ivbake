@@ -1,10 +1,49 @@
 .bento {
   background-color: $pinkred;
 
-  &__card {
-    @include onDesktop {
-      height: max-content;
+  &__flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include onTablet {
+      display: flex;
     }
+
+    &--cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include onTablet {
+        width: 49%;
+      }
+    }
+  }
+
+  &__card {
+    width: 48%;
+
+    @include onTablet {
+      margin: 0;
+    }
+
+    @include onDesktop {
+      height: min-content;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 auto 50px;
+  }
+
+  &__slider {
+    width: 100%;
+
+    @include onTablet {
+      width: 49%;
+      margin: 0;
+    }
+
   }
 
   &__card:hover {

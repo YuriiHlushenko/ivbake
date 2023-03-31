@@ -5,7 +5,8 @@
 
   &__body {
     margin: 0;
-    background-color: $pink;
+    // background-color: $pink;
+    background-color: #5dc27b83;
 
     &--h1 {
       max-width: 200px;
@@ -40,7 +41,7 @@
 
     &--title {
       display: flex;
-      font-size: 24px;
+      font-size: 36px;
       text-align: center;
       align-items: center;
       justify-content: center;
@@ -53,6 +54,7 @@
 
       @include onTablet {
         margin: 50px 0;
+        font-size: 46px;
       }
 
       @include onDesktop {

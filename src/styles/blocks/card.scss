@@ -23,6 +23,10 @@
 
     .card__photo--img {
       opacity: 0;
+
+      &-feedback {
+        opacity: 1;
+      }
     }
   }
 
@@ -45,18 +49,21 @@
   }
 
   &__title {
+    font-size: 22px;
     margin: 0 0 10px;
     text-align: center;
     color: $red;
   }
 
   &__about {
+    // font-size: 20px;
     font-family: "Montserrat Alternates", sans-serif;
     color: $red;
     margin: 0 0 20px;
   }
 
   &__subtitle {
+    font-size: 18px;
     margin: 0;
     font-family: "Montserrat Alternates", sans-serif;
     // text-align: center;

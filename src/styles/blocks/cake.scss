@@ -34,8 +34,18 @@
       background-image: url(/images/cake/muss/muss2.jpg);
     }
 
+    .cake__card--photo7 {
+      background-image: url(/images/cake/pistachio-raspberry/pistachio-raspberry2.jpg);
+    }
+
     .cake__card--photo-img {
       opacity: 0;
+    }
+  }
+
+  &__slider {
+    &--subtitle {
+      text-align: justify;
     }
   }
 }

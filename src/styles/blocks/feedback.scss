@@ -1,0 +1,33 @@
+.feedback {
+  background-color: $pink;
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 49%;
+    height: min-content;
+
+    @include onTablet {
+      width: 24%;
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 auto 50px;
+  }
+
+  &__slider {
+    width: 49%;
+
+    @include onTablet {
+      width: 24%;
+      margin: 0;
+    }
+
+  }
+}

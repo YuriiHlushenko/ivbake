@@ -1,7 +1,7 @@
 .desserts {
   background-color: $pinkred;
 
-  &__grid {
+  &__flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -26,6 +26,10 @@
       @include onDesktop {
         width: 23%;
       }
+    }
+
+    &:last-of-type {
+      justify-self: flex-start;
     }
   }
 
@@ -75,26 +79,30 @@
     }
 
     .desserts__card--photo12 {
-      background-image: url(/images/desserts/eskimo/eskimo2.jpg);
+      background-image: url(/images/desserts/tartBerries/tartBerries2.jpg);
     }
 
     .desserts__card--photo13 {
-      background-image: url(/images/desserts/tiramisu/tiramisu2.jpg);
+      background-image: url(/images/desserts/eskimo/eskimo2.jpg);
     }
 
     .desserts__card--photo14 {
-      background-image: url(/images/desserts/browny/browny2.jpg);
+      background-image: url(/images/desserts/tiramisu/tiramisu2.jpg);
     }
 
     .desserts__card--photo15 {
-      background-image: url(/images/desserts/nuts/nuts2.jpg);
+      background-image: url(/images/desserts/browny/browny2.jpg);
     }
 
     .desserts__card--photo16 {
-      background-image: url(/images/desserts/potato/potato2.jpg);
+      background-image: url(/images/desserts/nuts/nuts2.jpg);
     }
 
     .desserts__card--photo17 {
+      background-image: url(/images/desserts/potato/potato2.jpg);
+    }
+
+    .desserts__card--photo18 {
       background-image: url(/images/desserts/sinabon/sinabon2.jpg);
     }
   }

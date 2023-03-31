@@ -50,6 +50,7 @@ window.onload = function() {
 
   slider('slider');
   slider('sliderBento');
+  slider('sliderFeedback');
   // eslint-disable-next-line no-undef
   AOS.init();
 
