@@ -46,6 +46,33 @@
     @include onTablet {
       width: 40%;
     }
+
+    .card__title {
+      font-size: 28px;
+      margin: 0;
+
+      @include onTablet {
+        margin: 0;
+        font-size: 36px;
+      }
+    }
+
+    .card__description,
+    .card__subtitle {
+      font-size: 20px;
+
+      @include onTablet {
+        font-size: 36px;
+      }
+    }
+
+    .card__about {
+      font-size: 20px;
+
+      @include onTablet {
+        font-size: 30px;
+      }
+    }
   }
 
   &__eggs {
@@ -172,6 +199,14 @@
 
     .easter__card--photo2 {
       background-image: url(/images/easter/cake22.jpg);
+    }
+
+    .easter__card--photo3 {
+      background-image: url(/images/easter/cheese2.jpg);
+    }
+
+    .easter__card--photo4 {
+      background-image: url(/images/easter/krafin2.jpg);
     }
   }
 

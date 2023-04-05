@@ -2,16 +2,21 @@
   background-color: $pink;
 
   &__flex {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include onTablet {
+      display: flex;
+    }
   }
 
   &__card {
+    display: none;
     width: 49%;
     height: min-content;
 
     @include onTablet {
+      display: block;
       width: 24%;
       margin: 0;
     }
@@ -22,8 +27,6 @@
   }
 
   &__slider {
-    width: 49%;
-
     @include onTablet {
       width: 24%;
       margin: 0;
