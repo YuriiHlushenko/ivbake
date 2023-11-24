@@ -1,9 +1,32 @@
 .zephyr {
   background-color: $pink;
 
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__card {
+    width: 48%;
+
     @include onDesktop {
-      height: max-content;
+      width: 23%;
+    }
+
+    &--bigger {
+      width: 100%;
+
+      @include onTablet {
+        width: 48%;
+      }
+      @include onDesktop {
+        width: 23%;
+      }
+    }
+
+    &:last-of-type {
+      justify-self: flex-start;
     }
   }
 
@@ -26,15 +49,6 @@
 
     .zephyr__card--photo5 {
       background-image: url(/images/zephyr/domebox/dome2.jpg);
-    }
-  }
-
-  &__text {
-    font-size: 20px;
-    color: $red;
-
-    @include onDesktop {
-      font-size: 22px;
     }
   }
 }

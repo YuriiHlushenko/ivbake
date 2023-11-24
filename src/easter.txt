@@ -1,0 +1,129 @@
+
+    <div class="easter page__section">
+      <div class="page__container">
+
+        <div class="easter__content">
+          <div class="easter__text page__section--title">
+            Шукаєш паску до великодня?<br>
+            Гортай вниз та обирай свою!
+          </div>
+
+          <div class="easter__background">
+            <img class="easter__eggs easter__eggs--1"
+            src="images/easter/eggs/egg1.png" alt="пасхальне яйце">
+
+            <img class="easter__eggs easter__eggs--2"
+            src="images/easter/eggs/egg2.png" alt="пасхальне яйце">
+
+            <img class="easter__eggs easter__eggs--3"
+            src="images/easter/eggs/egg3.png" alt="пасхальне яйце">
+
+            <img class="easter__eggs easter__eggs--4"
+            src="images/easter/eggs/egg4.png" alt="пасхальне яйце">
+          </div>
+
+          <p class="easter__text easter__text--p page__section--title">
+            Найсмачніші паски до вашого святковго столу
+            наповнені двома видами родзинок, курагою та журавлиною.
+            А цей неймовірний декор захопить кожного. <br>
+            Замовляйте свою завчасно щоб свято було смачним.
+          </p>
+        </div>
+
+        <div class="easter__flex">
+          <div class="card easter__card">
+            <div class="card__description ">
+              <h3 class="card__title">Паска 300г</h3>
+            </div>
+
+            <div class="easter__card--photo1 card__photo">
+              <img class="card__photo--img"
+                src="images/easter/cake1.jpg" alt="паска з шаколадним кроликом та зеленим мохом житомир івбейк"
+              >
+            </div>
+
+            <div class="card__description ">
+              <p class="card__about">
+                Ніжна та пухка пасочка з двома видами ізюму, журавлиною та цукатів власного виробництва
+              </p>
+
+              <p class="card__subtitle">
+                <span class="bold">240 ₴</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card easter__card">
+            <div class="card__description ">
+              <h3 class="card__title">Паска 700г</h3>
+            </div>
+
+            <div class="easter__card--photo2 card__photo">
+              <img class="card__photo--img"
+                src="images/easter/cake2.jpg" alt="паска з шаколадним кроликом та зеленим мохом"
+              >
+            </div>
+
+            <div class="card__description ">
+              <p class="card__about">
+                Ніжна та пухка пасочка з двома видами ізюму, журавлиною та цукатів власного виробництва
+              </p>
+
+              <p class="card__subtitle">
+                <span class="bold">345 ₴</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card easter__card">
+            <div class="card__description ">
+              <h3 class="card__title">Сирна пасочка</h3>
+            </div>
+
+            <div class="easter__card--photo3 card__photo">
+              <img class="card__photo--img"
+                src="images/easter/cheese1.jpg" alt="Сирна паска житомир замовити"
+              >
+            </div>
+
+            <div class="card__description ">
+              <p class="card__about">
+                Сирна пасочка надзвичайно ніжна та неймовірно смачна з великою кількістю ізюму та цукатів
+              </p>
+
+              <p class="card__subtitle">
+                Вага 700г<br>
+                <span class="bold">420 ₴</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card easter__card">
+            <div class="card__description ">
+              <h3 class="card__title">Крафін</h3>
+            </div>
+
+            <div class="easter__card--photo4 card__photo">
+              <img class="card__photo--img"
+                src="images/easter/krafin1.jpg" alt="крафін житомир замовити"
+              >
+            </div>
+
+            <div class="card__description ">
+              <p class="card__about">
+                Крафін з арахісовою пастою🥜, шоколадом🍫 та вишнею 🍒
+              </p>
+
+              <p class="card__subtitle">
+                Вага 300г<br>
+                <span class="bold">280 ₴</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="easter__bottom">
+        <p class="easter__text page__section--title easter__bottom--title">Щасливого Великодня!</p>
+      </div>
+    </div>

@@ -17,17 +17,6 @@
       width: 23%;
     }
 
-    &--bigger {
-      width: 100%;
-
-      @include onTablet {
-        width: 48%;
-      }
-      @include onDesktop {
-        width: 23%;
-      }
-    }
-
     &:last-of-type {
       justify-self: flex-start;
     }
