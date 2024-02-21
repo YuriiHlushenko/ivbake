@@ -1,5 +1,5 @@
 .desserts {
-  background-color: $pinkred;
+  background-color: $pink;
 
   &__flex {
     display: flex;
@@ -20,78 +20,76 @@
     &:last-of-type {
       justify-self: flex-start;
     }
-  }
 
-  &__card:hover {
-    .desserts__card--photo1 {
+    &--photo1 {
       background-image: url(/images/desserts/merengue/merengue2.jpg);
     }
 
-    .desserts__card--photo2 {
+    &--photo2 {
       background-image: url(/images/desserts/hut/hut2.jpg);
     }
 
-    .desserts__card--photo3 {
+    &--photo3 {
       background-image: url(/images/desserts/pie/pie2.jpg);
     }
 
-    .desserts__card--photo4 {
+    &--photo4 {
       background-image: url(/images/desserts/lviv/lviv2.jpg);
     }
 
-    .desserts__card--photo5 {
+    &--photo5 {
       background-image: url(/images/desserts/cutcake/cutcake2.jpg);
     }
 
-    .desserts__card--photo6 {
+    &--photo6 {
       background-image: url(/images/desserts/trifle/trifle2.jpg);
     }
 
-    .desserts__card--photo7 {
+    &--photo7 {
       background-image: url(/images/desserts/cupcake/cupcake2.jpg);
     }
 
-    .desserts__card--photo8 {
+    &--photo8 {
       background-image: url(/images/desserts/macaron/macaron2.jpg);
     }
 
-    .desserts__card--photo9 {
+    &--photo9 {
       background-image: url(/images/desserts/tube/tube2.jpg);
     }
 
-    .desserts__card--photo10 {
+    &--photo10 {
       background-image: url(/images/desserts/ecler/ecler2.jpg);
     }
 
-    .desserts__card--photo11 {
+    &--photo11 {
       background-image: url(/images/desserts/tart/tart2.jpg);
     }
 
-    .desserts__card--photo12 {
+    &--photo12 {
       background-image: url(/images/desserts/tartBerries/tartBerries2.jpg);
     }
 
-    .desserts__card--photo13 {
+    &--photo13 {
       background-image: url(/images/desserts/eskimo/eskimo2.jpg);
     }
 
-    .desserts__card--photo14 {
+    &--photo14 {
       background-image: url(/images/desserts/tiramisu/tiramisu2.jpg);
     }
 
-    .desserts__card--photo15 {
+    &--photo15 {
       background-image: url(/images/desserts/browny/browny2.jpg);
     }
 
-    .desserts__card--photo16 {
+    &--photo16 {
       background-image: url(/images/desserts/nuts/nuts2.jpg);
     }
 
-    .desserts__card--photo17 {
+    &--photo17 {
       background-image: url(/images/desserts/potato/potato2.jpg);
     }
 
-    .desserts__card--photo18 {
+    &--photo18 {
       background-image: url(/images/desserts/sinabon/sinabon2.jpg);
     }
   }

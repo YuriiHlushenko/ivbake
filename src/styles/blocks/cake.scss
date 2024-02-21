@@ -1,5 +1,5 @@
 .cake {
-  background-color: $pink;
+  background-color: $pinkred;
 
   &__grid {
     display: block;
@@ -9,48 +9,48 @@
     }
   }
 
-  &__card:hover {
-    .cake__card--photo1 {
+  &__card {
+    &--photo1 {
       background-image: url(/images/cake/napoleon/napoleon4.jpg);
     }
 
-    .cake__card--photo2 {
+    &--photo2 {
       background-image: url(/images/cake/medovyk/medovyk2.jpg);
     }
 
-    .cake__card--photo3 {
+    &--photo3 {
       background-image: url(/images/cake/spartak/spartak2.jpg);
     }
 
-    .cake__card--photo4 {
+    &--photo4 {
       background-image: url(/images/cake/grillage/grillage2.jpg);
     }
 
-    .cake__card--photo5 {
+    &--photo5 {
       background-image: url(/images/cake/snikers/snikers2.jpg);
     }
 
-    .cake__card--photo6 {
+    &--photo6 {
       background-image: url(/images/cake/muss/muss2.jpg);
     }
 
-    .cake__card--photo7 {
+    &--photo7 {
       background-image: url(/images/cake/pistachio-raspberry/pistachio-raspberry2.jpg);
     }
 
-    .cake__card--photo8 {
+    &--photo8 {
       background-image: url(/images/cake/beylis/beylis2.jpg);
     }
 
-    .cake__card--photo9 {
+    &--photo9 {
       background-image: url(/images/cake/vanila/vanila2.jpg);
     }
 
-    .cake__card--photo10 {
+    &--photo10 {
       background-image: url(/images/cake/shvarts/shvarts2.jpg);
     }
 
-    .cake__card--photo-img {
+    &--photo-img {
       opacity: 0;
     }
   }

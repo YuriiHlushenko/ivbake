@@ -1,18 +1,22 @@
 .zephyr {
-  background-color: $pink;
+  background-color: $pinkred;
 
   &__flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   &__card {
-    width: 48%;
+    width: 100%;
 
-    @include onDesktop {
-      width: 23%;
+    @include onTablet {
+      width: 48%;
     }
+
+    // @include onDesktop {
+    //   width: 23%;
+    // }
 
     &--bigger {
       width: 100%;
@@ -28,27 +32,26 @@
     &:last-of-type {
       justify-self: flex-start;
     }
-  }
 
-  &__card:hover {
-    .zephyr__card--photo1 {
+    &--photo1 {
       background-image: url(/images/zephyr/bouquetS/bouquetS2.jpg);
     }
 
-    .zephyr__card--photo2 {
+    &--photo2 {
       background-image: url(/images/zephyr/bouquetM/bouquetM2.jpg);
     }
 
-    .zephyr__card--photo3 {
+    &--photo3 {
       background-image: url(/images/zephyr/bouquetL/bouquetL2.jpg);
     }
 
-    .zephyr__card--photo4 {
+    &--photo4 {
       background-image: url(/images/zephyr/box/box2.jpg);
     }
 
-    .zephyr__card--photo5 {
+    &--photo5 {
       background-image: url(/images/zephyr/domebox/dome2.jpg);
     }
   }
+
 }

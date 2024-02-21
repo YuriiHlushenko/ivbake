@@ -1,0 +1,22 @@
+# IDE
+.idea
+.vscode
+
+# Node
+node_modules
+
+# MacOS
+.DS_Store
+
+# Generated files
+backstop_data
+dist
+.cache
+.linthtmlrc.json
+.stylelintignore
+.stylelintrc.js
+.eslintrc.js
+.editorconfig
+LICENSE
+package-lock.json
+package.json

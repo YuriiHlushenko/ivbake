@@ -55,25 +55,7 @@
     }
 
     &--img {
-      animation: logo 0.5s linear 1 alternate;
       height: 100%;
-    }
-
-    @keyframes logo {
-      0% {
-        scale: 5%;
-        rotate: -180deg;
-      }
-
-      75% {
-        scale: 120%;
-        rotate: 90deg;
-      }
-
-      100% {
-        scale: 100%;
-        rotate: 0deg;
-      }
     }
   }
 
@@ -106,6 +88,10 @@
     right: 8px;
     top: 260px;
     z-index: 4;
+  }
+
+  @media (max-height: 685px) {
+    top: 10%;
   }
 
   @media (min-width: 1550px) {

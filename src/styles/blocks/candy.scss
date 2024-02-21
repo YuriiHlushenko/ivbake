@@ -1,0 +1,59 @@
+.candy {
+  &__top {
+    background-image: url(/images/candy/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+    overflow: visible;
+
+    &--text {
+      color: white;
+    }
+
+    &--title {
+      color: white;
+      margin: 0;
+      padding: 20px auto;
+
+      @include onTablet {
+        padding: 40px 0;
+      }
+
+      @include onDesktop {
+        padding: 70px 0;
+      }
+    }
+  }
+
+  &__section {
+    overflow: visible;
+  }
+
+  &__padding {
+    padding: 0;
+  }
+
+  &__container {
+    transform: translateY(-5vh);
+
+    @media (max-width: 900px) {
+      overflow-x: scroll;
+    }
+
+    &--flex {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+
+      @media (max-width: 900px) {
+        min-width: 1600px;
+      }
+    }
+  }
+}
+
+#candy > div > div > div > div > div > div > img {
+  opacity: 1;
+}

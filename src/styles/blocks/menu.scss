@@ -25,7 +25,7 @@
     font-size: 14px;
     line-height: 140%;
     color: $red;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
 
     @include onDesktop {
       margin: 0;
@@ -42,52 +42,8 @@
     }
   }
 
-  &__item--menu:nth-child(-n+4) {
-    transform: translate(-150%);
-    opacity: 0;
-    transition: all 0.4s;
-  }
-
-  &__item--menu:nth-child(2) {
-    transition: all 0.5s;
-  }
-
-  &__item--menu:nth-child(3) {
-    transition: all 0.6s;
-  }
-
-  &__item--menu:nth-child(4) {
-    transition: all 0.7s;
-  }
-
   &:target {
     transform: translateX(0);
-
-    .menu__logo--img {
-      animation: logo 0.5s linear 0.1s 1 alternate;
-    }
-
-    .menu__item:nth-child(-n+4) {
-      transform: translate(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes logo {
-    0% {
-      scale: 5%;
-      rotate: -180deg;
-    }
-
-    75% {
-      scale: 120%;
-      rotate: 90deg;
-    }
-
-    100% {
-      scale: 100%;
-      rotate: 0deg;
-    }
   }
 
   &__cross {

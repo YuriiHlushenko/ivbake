@@ -17,20 +17,25 @@ window.onload = function() {
         item.style.width = width + 'px';
         item.style.height = 'auto';
       });
-      rollSlider();
+
+      sliderLine.style.transform = 'none';
     }
+
+    function next() {
+      count++;
+
+      if (count >= images.length) {
+        count = 0;
+      }
+      rollSlider();
+    };
 
     init();
     window.addEventListener('resize', init);
 
     document.querySelector(`.${sliderName}__button--next`).addEventListener(
       'click', function() {
-        count++;
-
-        if (count >= images.length) {
-          count = 0;
-        }
-        rollSlider();
+        next();
       });
 
     document.querySelector(`.${sliderName}__button--prev`).addEventListener(
@@ -46,13 +51,34 @@ window.onload = function() {
     function rollSlider() {
       sliderLine.style.transform = 'translate(-' + count * width + 'px)';
     }
+
+    setTimeout(() => next(), 2000);
+    setTimeout(() => next(), 9000);
+    setTimeout(() => next(), 11000);
   }
 
   slider('slider');
   slider('sliderBento');
   slider('sliderFeedback');
-  // eslint-disable-next-line no-undef
-  AOS.init();
+
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    card.addEventListener(
+      'click', function() {
+        if (card.classList.contains('card--hover')) {
+          card.classList.remove('card--hover');
+        } else {
+          card.classList.add('card--hover');
+        }
+      });
+  });
+
+  cards.forEach(card => card.classList.add('card--hover'));
+
+  setTimeout(
+    () => cards.forEach(card => card.classList.remove('card--hover'))
+    , 4000);
 
   window.addEventListener('hashchange', () => {
     if (window.location.hash === '#menu') {
